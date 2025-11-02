@@ -4,8 +4,10 @@ from cryptography.hazmat.primitives import serialization
 from cryptography.exceptions import InvalidSignature
 import binascii
 
+
 class Wallet:
-    """Creates, loads and holds private and public keys. Manages transaction signing and verification."""
+    """Creates, loads and holds private and public keys. Manages transaction
+    signing and verification."""
 
     def __init__(self, node_id):
         self.private_key = None
